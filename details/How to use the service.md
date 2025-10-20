@@ -22,14 +22,14 @@ for all keys in the redis cache:
 
 ```
 4) Once a tag has more than MIN_SAMPLES amount of datat then tag is now monitored for falls
-5) We operate on maintaing a sliding window BUFFER
+5) We operate on maintaining a sliding window BUFFER
 6) During the buffer we preprocess the data according to our preprocessing pipeline (lid our in how to run the code)
 7) Threshold check -See if the peak z minus 25th percentile of next Z values >= 0.4. This means that a drop of 0.4 meters has been detected
-8) If the threshold is passed then the classifcation using the trained model is activated
+8) If the threshold is passed then the classification using the trained model is activated
 9) If a fall has been detected then a notification is sent out and the tag is locked for 30 seconds, also the redis list and the queue is cleared.
 
 
-Each tag has a 4 second loop period.
+Each tag has a minimum 4 second loop period.
 
 
 ### Notification

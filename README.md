@@ -16,11 +16,11 @@ As the project scope was define to only Fall-Detection any code/research regardi
 This compendium is structured into different folders each respective of their content types
 
 #### Code
-The code folder contains the code required to train the machine learning model and other utility files.\
+The codebase folder contains the code required to train the machine learning model and other utility files.\
 Specific details can be found under the ```details/How to run the code.md``` files
 
 #### Details
-The details folder contains the necessary explaination regarding the project.
+The details folder contains the necessary explanation regarding the project.
 
 You should ideally read in this order
 1) How to run the code

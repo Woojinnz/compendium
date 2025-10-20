@@ -2,15 +2,17 @@
 
 We also provide ways to check how well the model performs.
 
-```code\util\visualize.py``` contains code that can plot all 3d coordinate data, whilst also highlighting in yellow when the model has determined a fall has occured
+```codebase\util\visualise_and classify.py``` contains code that can plot 3d coordinate data, whilst also highlighting in yellow when the model has determined a fall has occured
 
 ### Folder Structure
-The file must be placed with a trace file, trained model (model_pos.pkl and scaler_pos.pkl) and the two helper modules (jump filter and savistzky golay)
+The scripts currently pulls a fall file from the training data folder.
+You can change the path to any other csv file that you wish to test.
 
-They must all be located within the same level
+The jump filter and savitzky-golay filter are used by this script.
+
 
 ### How it works
-1) Load the text file
+1) Load the csv file
 2) Proprocess (jump, downsample, etc..)
 3) Feature extraction
 4) Model classifcation

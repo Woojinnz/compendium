@@ -1,20 +1,20 @@
 # Checking Preprocessing data
 
-We provide ways on plotting the gathered raw data to see if the data is healthy.\
+We provide ways on plotting the gathered raw data to see if the data is healthy.
 Mainly we show the difference between the raw data and the data after the processing pipeline
 
-These files can be found in ```code/util/visualize_coordinates.py```
+These files can be found in ```codebase/util/visualise_coordinates.py```
 
 ### Folder structure
-Similar to the train_model.py file the training_data folder and the visualize file must be located on the same level.
+The scripts currently pulls a fall file from the training data folder.
+You can change the path to any other csv file that you wish to test.
 
-The jump filter and saviszky_golay filter is used by this script.
+The jump filter and savitzky-golay filter are used by this script.
 
 ### What it does
-1) Load CSVS
-2) Randomnly picks one example
-4) Preprocess the data using the preprocesing pipeline
-5) Plotting - Plot the processed data which should show a smoothening of noise.
+1) Loads a raw csv file containing 3d positional data
+2) Preprocess the data using the preprocesing pipeline
+3) Plotting - Plot the processed data which should show a smoothening of noise.
 
 Some example outputs are shown below
 
